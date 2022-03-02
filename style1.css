@@ -59,7 +59,7 @@
 
 
 body{
-    background: red;
+    background: #fff;
     margin-top: 100px;
     margin-left: 50px;
     margin-right: 50px;
@@ -124,11 +124,12 @@ header .navbar a:hover{
     display: flex;
     flex-wrap: wrap;
     gap:1.5rem;
-    min-height: 100vh;
+    min-height: 60vh;
     align-items: center;
     background-size: cover;
     background-position: center;
     position: relative;
+    border: purple dotted;
   }
   .MOD .content{
     flex:1 1 40rem;
@@ -193,10 +194,10 @@ header .navbar a:hover{
   
   /* Number text (1/3 etc) */
   .numbertext {
-    color: #f2f2f2;
+    color: orange;
     font-size: 12px;
     padding: 8px 12px;
-    position: absolute;
+    position: relative;
     top: 0;
   }
   
