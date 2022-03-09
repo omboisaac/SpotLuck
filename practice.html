@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body id="inputBody">
+
+<form>
+
+    <input type="file" id="image_input">
+
+
+    <div class="box">
+        <span class="price"> $5 - $20 </span>
+        <div id="display_image"></div>
+        <h3>tasty cakes</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+        <h2>Made by</h2>
+        <a href="#" class="btn">order now</a>
+    </div>
+
+</form> 
+   
+
+<script>
+
+    const image_input = document.querySelector("#image_input");
+    var uploaded_image;
+
+    image_input.addEventListener('change', function() {
+    const reader = new FileReader();
+    reader.addEventListener('load', () => {
+        uploaded_image = reader.result;
+        document.querySelector("#display_image").style.backgroundImage = `url(${uploaded_image})`;
+    });
+    reader.readAsDataURL(this.files[0]);
+    });
+
+</script>
+
+</body>
+
+
+
+</html>

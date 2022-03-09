@@ -25,12 +25,12 @@
     border:.2rem solid orange;
     color:orange;
     cursor: pointer;
-    font-size: 0.5 rem;
+    font-size: 0.5rem;
     border-radius: .5rem;
     position: relative;
     overflow: hidden;
     z-index: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   
   .btn::before{
@@ -106,12 +106,11 @@ header .navbar a:hover{
     color:#666;
   }
   
-  /* header font change*/
+
   
   header .navbar a{
-    font-size: 2rem;
+    font-size: 1rem;
     margin-left: 2rem;
-    font-weight: bolder;
     color:#666;
     text-decoration: none;
   }
@@ -130,6 +129,7 @@ header .navbar a:hover{
     background-size: cover;
     background-position: center;
     position: relative;
+    border: purple dotted;
   }
   .MOD .content{
     flex:1 1 40rem;
@@ -147,7 +147,7 @@ header .navbar a:hover{
 
 
   .MOD .slideshow-container img{
-    height: 50vh;
+    max-height: 50vh;
     width:auto;
     border-radius: 12px;
   }
@@ -163,90 +163,6 @@ header .navbar a:hover{
     padding:1rem 0;
   }
   
-  .popular .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-  }
-  
-  .popular .box-container .box{
-    padding:2rem;
-    background:#fff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border:.1rem solid rgba(0,0,0,.3);
-    border-radius: .5rem;
-    text-align: center;
-    flex:1 1 30rem;
-    position: relative;
-  }
-  
-  .popular .box-container .box img{
-    height: 25rem;
-    object-fit: cover;
-    width: 100%;
-    border-radius: 1rem;
-  }
-  
-  .popular .box-container .box .price{
-    position: absolute;
-    top:3rem; left:3rem;
-    background:var(--red);
-    color:#fff;
-    font-size: 2rem;
-    padding:.5rem 1rem;
-    border-radius: .5rem;
-  }
-  
-  .popular .box-container .box h3{
-    color:#333;
-    font-size: 2.5rem;
-    padding-top: 1rem;
-  }
-  
-  .popular .box-container .box .stars i{
-    color:gold;
-    font-size: 1.7rem;
-    padding:1rem .1rem;
-  }
-
-  .btn{
-    display: inline-block;
-    padding:.8rem 3rem;
-    border:.2rem solid var(--red);
-    color:var(--red);
-    cursor: pointer;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-    margin-top: 1rem;
-  }
-  
-  .btn::before{
-    content: '';
-    position: absolute;
-    top:0; right: 0;
-    width:0%;
-    height:100%;
-    background:var(--red);
-    transition: .3s linear;
-    z-index: -1;
-  }
-  
-  .btn:hover::before{
-    width:100%;
-    left: 0;
-  }
-  
-  .btn:hover{
-    color:#fff;
-  }
-
-  .slideimg{
-
-  }
-
 
   .order .row{
     padding:2rem;
@@ -279,7 +195,6 @@ header .navbar a:hover{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: royalblue solid;
   }
   
   .order .row form .inputBox input, .order .row form textarea{
@@ -307,33 +222,9 @@ header .navbar a:hover{
     background:var(--red);
   }
 
-  .footer{
-    background:orange;
-    text-align: center;
-  }
-  .social{
-    max-height: 5vh;
-    width:auto;
-    border-radius: 12px;
-  }
   
-  .footer .share{
-    display: flex;
-    gap:1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .footer .credit{
-    padding:2.5rem 1rem;
-    color:#fff;
-    font-weight: normal;
-    font-size: 2rem;
-  }
-  
-
   .heading{
-    
+    text-align: center;
     font-size: 3.5rem;
     padding:1rem;
     color:#666;
@@ -400,99 +291,3 @@ header .navbar a:hover{
     animation-name: fade;
     animation-duration: 1.5s;
   }
-
-
-
-  /*for chef input*/
-
-  #inputBody{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 10px;
-    flex-direction: column;
-    height: 100vh;
-}
-
-#display_image{
-    width: 375px;
-    height: 211px;
-    border: 1px solid black;
-    background-position: center;
-    background-size: cover;
-}
-
-
-
-/* for chef pop up*/
-
-.popup{
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.7);
-  position: absolute;
-  top: 0;
-  left: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
-.popup-content{
-  width:500px;
-  height: 600px;
-  background-color: white;
-  border-radius: 4px;
-  position: relative;
-}
-.popup .popup-content form{
-  flex:1 1 50rem;
-  padding:1rem;
-}
-
-.popup .popup-content form input{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 0;
-}
-
-.popup .popup-content form input, .popup .popup-content form textarea{
-  padding:1rem;
-  margin:1rem 0;
-  font-size: 1.7rem;
-  color:#333;
-  text-transform: none;
-  border:.1rem solid rgba(0,0,0,.3);
-  border-radius: .5rem;
-  width:49%;
-}
-
-
-.popheading{
-    
-  font-size: 3.5rem;
-  padding:1rem;
-  color:#666;
-}
-
-.popheading span{
-  color:var(--red);
-}
-.popheading{
-  display: flex;
-  justify-content: center;
-}
-
-
-
-.close{
-  position: absolute;
-  right: 2%;
-  top: 0%;
-  font-size: 42px;
-  transform: rotate(45deg);
-  cursor: pointer;
-
-}

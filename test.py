@@ -1,2 +1,0 @@
-print("this")
-print("that")
