@@ -89,6 +89,13 @@ document.querySelector('#submitbtn').addEventListener('click', function(){
 
   box1.appendChild(stars1);
 
+  /*for add to cart button */
+
+  var a1 = document.createElement('a');
+  a1.className='btn';
+  a1.innerText = 'Add To Cart';
+  box1.appendChild(a1);
+
 
   
 

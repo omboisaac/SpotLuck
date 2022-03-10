@@ -256,7 +256,6 @@ header .navbar a:hover{
     flex-wrap: wrap;
     gap:1.5rem;
     border-radius: .5rem;
-    border: purple solid;
   }
   
   .order .row .image{
@@ -279,7 +278,6 @@ header .navbar a:hover{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: royalblue solid;
   }
   
   .order .row form .inputBox input, .order .row form textarea{
