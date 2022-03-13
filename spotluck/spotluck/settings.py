@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #"spotluck_dev_db",
+    "spotluck_dev_db",
     "blog.apps.BlogConfig",
     "users.apps.UsersConfig",
     "crispy_forms",
@@ -78,12 +78,14 @@ WSGI_APPLICATION = "spotluck.wsgi.application"
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
+    '''
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
+    '''
 
-    # "default": {'ENGINE': 'django.db.backends.postgresql_psycopg2', 'NAME': 'spotluck_dev_db','USER': 'postgres','PASSWORD': 'pgpassword','HOST': '127.0.0.1','PORT': '5432',}
+    "default": {'ENGINE': 'django.db.backends.postgresql_psycopg2', 'NAME': 'spotluck_dev_db','USER': 'postgres','PASSWORD': 'pgpassword','HOST': '127.0.0.1','PORT': '5432',}
 
 }
 
